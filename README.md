@@ -1,4 +1,42 @@
-# Python Errors: record Python errors and solutions
+# Python Errors
 
-Python Errors is a simple project that record Python errors happen to me,
-and a solution will be given after searching Google or reading the documentations.
+相信你一定有这样的经验，在执行pip安装某个包时或者执行某个脚本时总会碰到一些错误，
+你是一个很有效率的人，随便去Google一下，找到了答案，顺利的解决了问题，大功告成。
+
+但是这个不是事情的结局，当你到另外一台机器上，或者改变了某些环境，这个问题又重新
+出现了，你又去搜索一遍。。。
+
+这个就是我以前遇到的问题，所以才有了这个项目，我会把我使用Python过程中碰到的
+问题及其解决办法写到这里，以备下次使用，当然不是所有问题都值得往这些写：
+
+    1. 必须是非人为的错误，比如说你在代码里写1/0，这时抛出了异常，就不会写在这里
+    2. 必须对以后有参考性
+    
+### 环境说明：
+    
+每个人的环境不一样当然当然会导致问题和解决办法都不一样，所以我会在没一条记
+录里面说明当时的系统环境，但是每条都写很多都是一样的环境有些麻烦，所以我会给
+每个环境一个ID，然后在每条记录里只写这条ID
+
+
+```json
+e0 = {
+    系统： Ubuntu 14.04 LTS，
+    Python: Python 2.7.6,
+    pip: pip 8.1.2,
+    MySQL: 5.5.49
+}
+
+e1 = {
+    系统： Ubuntu 16.04，
+    Python: Python 2.7.10,
+    pip: pip 8.1.2,
+    MySQL: 5.7.12
+}
+```
+
+### 文件说明
+
+exception.md: 一些Python异常
+
+pip.md: 用pip装包出现的问题，一般都是系统级别的依赖没有装
